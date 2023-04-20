@@ -4,27 +4,81 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="lib/email-link.js"></script>
   <title>BackstoryAI</title>
 </head>
 <body>
   <nav>
+    <p>&nbsp;</p>
     <a href="https://www.backstoryai.com">
-      <img src="images/backstoryai.svg" alt="BackstoryAI" width="500px" />
+      <img src="images/backstoryai.svg" alt="BackstoryAI" />
     </a>
   </nav>
   <header>
-    <p class="subtitle">
-      Harnessing the power of AI to help you tell stories.
-    </p>
+    <h2 class="subtitle">
+      BackstoryAI helps you create characters. Using cutting-edge generative AI technology, BackstoryAI generates 
+      engaging biographies and stories for your characters, complete with photos.
+    </h2>
   </header>
   <main>
-    <p>
-      Stay tuned for more information.
-    </p>
+    <section class="cols">
+      <div>
+        <h3>
+          Authors
+        </h3>
+        <p>BackstoryAI helps authors envision characters and create rich stories about them.</p>
+      </div>
+      <div>
+        <h3>
+          Product Managers
+        </h3>
+        <p>BackstoryAI assists product managers in creating user personas for their products.</p>
+      </div>
+      <div>
+        <h3>
+          Therapists
+        </h3>
+        <p>BackstoryAI allows therapists to role-play more realistically with their patients.</p>
+      </div>
+      <div>
+        <h3>
+          Teachers
+        </h3>
+        <p>BackstoryAI helps teachers create more engaging lessons for their students.</p>
+      </div>
+      <div>
+        <h3>
+          Game Developers
+        </h3>
+        <p>BackstoryAI helps game developers create more realistic characters for their games.</p>
+      </div>
+      <div>
+        <h3>
+          Screenwriters
+        </h3>
+        <p>BackstoryAI helps screenwriters create more realistic characters for their movies and TV shows.</p>
+      </div>
+    </section>
+    <hr />
+    <section class="center">
+      <h3>BackstoryAI is in private preview</h3>
+      <p>
+        If you'd like to get involved in the preview program, please
+        <a data-email-address="alpha backstoryai.com">get in touch with us</a>.
+      </p>
+    </section>
   </main>
   <footer>
     &copy; BackstoryAI
   </footer>
+  <script type="text/javascript">
+    window.addEventListener("load", function () {
+      enableEmailLinks()
+    });
+  </script>
 </body>
 </html>
