@@ -11,7 +11,7 @@
 <clipPath id="ArtboardFrame">
 <rect height="32" width="160" x="0" y="0"/>
 </clipPath>
-<g clip-path="url(#ArtboardFrame)" id="background">
+<g clip-path="url(#ArtboardFrame)" id="background" visibility="hidden">
 <path d="M-0.789601-0.367177L160.21-0.367177L160.21 32.6328L-0.789601 32.6328L-0.789601-0.367177Z" fill="#170819" fill-rule="nonzero" opacity="1" stroke="none"/>
 </g>
 <g id="Layer-1">
