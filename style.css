@@ -130,8 +130,10 @@ ol > li > h3 {
 }
 ol > li > p {
   grid-area: description;
-  margin: 0.3rem 0 0;
   opacity: 0.8;
+}
+ol > li > h3 + p {
+  margin: 0.3rem 0 0;
 }
 footer {
   font-size: 0.8rem;
