@@ -30,10 +30,16 @@ main {
   flex-direction: column;
   flex-grow: 1;
 }
+h1 {
+  font-weight: 300;
+}
 h2 {
-  margin: 0 0 2rem;
+  margin: 1rem 0 0;
   font-weight: 300;
   font-size: 1.9rem;
+}
+.home h2 {
+  margin: 0 0 2rem;
 }
 section::before {
   counter-increment: section;
@@ -88,14 +94,14 @@ section > div {
 .light {
   background-color: #362a39;
 }
-ol {
+.home ol {
   list-style: none;
   counter-reset: item;
   margin: 0;
   padding: 0;
   max-width: 800px;
 }
-ol > li {
+.home ol > li {
   counter-increment: item;
   margin-bottom: 1.8rem;
   display: grid;
@@ -105,10 +111,10 @@ ol > li {
   grid-template-columns: min-content auto;
   align-items: center;
 }
-ol > li:last-child {
+.home ol > li:last-child {
   margin-bottom: 0.5rem;
 }
-ol > li::before {
+.home ol > li::before {
   content: counter(item);
   margin-right: 0.8rem;
   background-color: white;
@@ -124,15 +130,15 @@ ol > li::before {
   vertical-align: middle;
   grid-area: num;
 }
-ol > li > h3 {
+.home ol > li > h3 {
   grid-area: heading;
   margin: 0;
 }
-ol > li > p {
+.home ol > li > p {
   grid-area: description;
   opacity: 0.8;
 }
-ol > li > h3 + p {
+.home ol > li > h3 + p {
   margin: 0.3rem 0 0;
 }
 footer {
