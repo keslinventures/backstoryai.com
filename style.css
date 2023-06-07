@@ -50,12 +50,31 @@ nav a:hover:not(.btn) {
 nav a.btn {
   margin-right: 0;
 }
-nav img {
+nav .logo {
   width: 150px;
 }
 nav > p {
   text-transform: uppercase;
   font-size: 0.8rem;
+}
+nav button {
+  background: none;
+  border: none;
+}
+.tippy-box {
+  background-color: #362a39;
+  font-size: 1rem;
+}
+.tippy-arrow {
+  color: #362a39;
+}
+.tippy-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.tippy-content ul > li {
+  padding: 0.5rem 1rem;
 }
 header {
   padding: 3rem 28px;

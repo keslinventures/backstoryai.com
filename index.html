@@ -16,13 +16,18 @@
   <nav>
     <div>
       <a href="https://www.backstoryai.com">
-        <img src="images/backstoryai.svg" alt="BackstoryAI">
+        <img class="logo" src="images/backstoryai.svg" alt="BackstoryAI">
       </a>
-      <a href="https://try.backstoryai.com"><span class="mobile-only">Samples</span><span class="desktop-only">Sample stories</span></a>
+      <a href="https://try.backstoryai.com" style="margin-top: -3px"><span class="mobile-only">Samples</span><span class="desktop-only">Sample stories</span></a>
     </div>
-    <div>
+    <div class="desktop-only">
       <a href="https://app.backstoryai.com">Log in</a>
       <a href="/sign-up" class="btn">Sign up <span class="desktop-only">for free!</span></a>
+    </div>
+    <div class="mobile-only">
+      <button id="mobile-user-menu">
+        <img src="images/account.svg" alt="User menu">
+      </button>
     </div>
   </nav>
   <header>
@@ -117,6 +122,20 @@
     window.addEventListener("load", function () {
       enableEmailLinks()
     });
+  </script>
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://unpkg.com/tippy.js@6"></script>
+  <script>
+    tippy('#mobile-user-menu', {
+      content: `<ul>
+        <li><a href="https://app.backstoryai.com">Log in</a></li>
+        <li><a href="/sign-up">Sign up</a></li>
+      </ul>`,
+      allowHTML: true,
+      trigger: 'click',
+      interactive: true,
+      placement: 'bottom',
+    })
   </script>
 </body>
 </html>
