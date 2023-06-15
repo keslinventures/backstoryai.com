@@ -259,3 +259,27 @@ a.btn {
 .btn:active {
   background-color: #c0b4bc;
 }
+a.btn-lg {
+  font-size: 1.2rem;
+  padding: 0.8rem 1.5rem;
+}
+a.btn-gradient {
+  background-color: transparent;
+  background-image: radial-gradient(farthest-corner at 10% top, #872F95 0, #A54848 120%);
+  color: #fff;
+}
+a.btn-gradient:hover, .btn-gradient:active {
+  background-color: transparent;
+  background-image: radial-gradient(farthest-corner at 10% top, #652370 0, #7c3636 120%);
+}
+.top-space {
+  margin-top: 2rem;
+}
+body.stretch {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+body.stretch > header {
+  flex-grow: 1;
+}
