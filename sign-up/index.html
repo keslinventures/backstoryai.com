@@ -24,6 +24,23 @@
   <link rel="manifest" href="/site.webmanifest">
   <link rel="canonical" href="https://www.backstoryai.com/sign-up">
   <title>BackstoryAI</title>
+  <script type="application/javascript">
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('consent', 'default', {
+    'ad_storage': 'denied',
+    'analytics_storage': 'denied'
+  });
+  </script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WK5RBYY70Q"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-WK5RBYY70Q');
+  </script>
 </head>
 <body class="home stretch">
   <nav>
@@ -67,6 +84,29 @@
       interactive: true,
       placement: 'bottom',
     })
+  </script>
+  <script type="application/javascript" src="../klaro-config.min.js"></script>
+  <script
+    data-config="klaroConfig"
+    type="application/javascript"
+    src="https://cdn.kiprotect.com/klaro/v0.7/klaro.js">
+  </script>
+  <script type="application/javascript">
+    const kmgr = klaro.getManager();
+    if (kmgr.getConsent('googleAnalytics')) {
+      gtag('consent', 'update', {
+        analytics_storage: 'granted'
+      });
+    }
+    kmgr.watch({
+      update(obj, name) {
+        if (name === 'applyConsents') {
+          gtag('consent', 'update', {
+            analytics_storage: obj.consents.googleAnalytics ? 'granted' : 'denied'
+          });
+        }
+      }
+    });
   </script>
 </body>
 </html>

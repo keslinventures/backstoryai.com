@@ -283,3 +283,20 @@ body.stretch {
 body.stretch > header {
   flex-grow: 1;
 }
+#klaro-consent {
+  --dark1: #3d313e;
+  --dark2: #9b83a0;
+  --dark3: rgba(255, 255, 255, 0.7);
+  --light3: rgba(255, 255, 255, 0.7);
+  --light1: #fff;
+  --green1: #eadbed;
+  --blue1: #eadbed;
+  --button-text-color: #170819;
+  --white3: #3d313e;
+  --border-radius: 4px;
+  --font-family: "Roboto","Helvetica","Arial",sans-serif;
+  --title-font-family: "Roboto","Helvetica","Arial",sans-serif;
+}
+.cm-modal {
+  max-height: 80vh !important;
+}
