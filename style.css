@@ -309,3 +309,21 @@ body.stretch > header {
 .hide {
   display: none !important;
 }
+.middle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 600px;
+  align-self: center;
+}
+.middle img {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.middle p {
+  text-wrap: balance;
+  text-align: center;
+  line-height: 2rem;
+  font-weight: 200;
+  letter-spacing: 0.03em;
+}
